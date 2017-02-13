@@ -2,8 +2,7 @@
 
 RedRoster is a platform for students to see what courses are available at their school, what other students are taking, and what they think of them.
 
-<img src="http://i.imgur.com/QcQphYk.png" alt="View courses" width="300"/>
-<img src="http://i.imgur.com/2R8PK1d.jpg" alt="Search courses" width="300"/>
+<img src="http://i.imgur.com/QcQphYk.png" alt="View courses" width="150"/>
 
 ### Description
 The iOS application for RedRoster is an open source iOS application written in Swift and is licensed under the Apache License 2.0. The backend for RedRoster is also open source at <https://github.com/jma353/redroster-backend/>.
