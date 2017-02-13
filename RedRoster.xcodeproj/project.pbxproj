@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B2255389793A30DFFEADC70 /* Pods_RedRoster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413CD644D20E08864EEE6A86 /* Pods_RedRoster.framework */; };
+		650BDCE11CE115F100B2FD24 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BDCE01CE115F100B2FD24 /* ScheduleView.swift */; };
+		650D03A61CB6284200C60E0B /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650D03A41CB6284200C60E0B /* ScheduleCell.swift */; };
+		650D03A71CB6284200C60E0B /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650D03A51CB6284200C60E0B /* ScheduleCell.xib */; };
+		652969DB1CAA482400F5686D /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652969D91CAA482400F5686D /* TitleCell.swift */; };
+		652969DC1CAA482400F5686D /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652969DA1CAA482400F5686D /* TitleCell.xib */; };
+		6536E1FD1D00B9FA00F470CC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6536E1FC1D00B9FA00F470CC /* ProfileViewController.swift */; };
+		653B40121CDC702C0091C13C /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B40111CDC702C0091C13C /* APIKeys.swift */; };
+		6543CB971CFB9F5000438288 /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543CB951CFB9F5000438288 /* SliderCell.swift */; };
+		6543CB981CFB9F5000438288 /* SliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6543CB961CFB9F5000438288 /* SliderCell.xib */; };
+		6543CB9B1CFB9F6600438288 /* TextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543CB991CFB9F6600438288 /* TextViewCell.swift */; };
+		6543CB9C1CFB9F6600438288 /* TextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6543CB9A1CFB9F6600438288 /* TextViewCell.xib */; };
+		6543CB9E1CFBAF5700438288 /* ReviewItemsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543CB9D1CFBAF5700438288 /* ReviewItemsDelegate.swift */; };
+		6547006C1CB0829B0076CC63 /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547006A1CB0829B0076CC63 /* ReviewsViewController.swift */; };
+		6547006D1CB0829B0076CC63 /* ReviewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6547006B1CB0829B0076CC63 /* ReviewsViewController.xib */; };
+		6547006F1CB08C500076CC63 /* RatingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547006E1CB08C500076CC63 /* RatingBar.swift */; };
+		654700721CB0D4AE0076CC63 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654700701CB0D4AE0076CC63 /* ReviewCell.swift */; };
+		654700731CB0D4AE0076CC63 /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 654700711CB0D4AE0076CC63 /* ReviewCell.xib */; };
+		654BE4701CA8795C008BEFD4 /* SubjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654BE46E1CA8795C008BEFD4 /* SubjectCell.swift */; };
+		654BE4711CA8795C008BEFD4 /* SubjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 654BE46F1CA8795C008BEFD4 /* SubjectCell.xib */; };
+		654BE4731CA87A40008BEFD4 /* TermListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654BE4721CA87A40008BEFD4 /* TermListViewController.swift */; };
+		654BE4771CA8A7A6008BEFD4 /* Classes+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654BE4761CA8A7A6008BEFD4 /* Classes+Extensions.swift */; };
+		654BE4791CA900FB008BEFD4 /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654BE4781CA900FB008BEFD4 /* SubjectViewController.swift */; };
+		654BE47B1CA9B204008BEFD4 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654BE47A1CA9B204008BEFD4 /* CourseViewController.swift */; };
+		65537BD01CA69C3B008B8270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65537BCF1CA69C3B008B8270 /* GoogleService-Info.plist */; };
+		6553BC961CFB77DD0007B705 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6553BC941CFB77DD0007B705 /* UserCell.swift */; };
+		6553BC971CFB77DD0007B705 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6553BC951CFB77DD0007B705 /* UserCell.xib */; };
+		655D022F1CA59B1A00AE769A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655D022E1CA59B1A00AE769A /* NetworkManager.swift */; };
+		65611D161D555EC60033ADA2 /* ReviewDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65611D151D555EC60033ADA2 /* ReviewDetailViewController.swift */; };
+		65611D191D55891F0033ADA2 /* DeleteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65611D171D55891F0033ADA2 /* DeleteCell.swift */; };
+		65611D1A1D55891F0033ADA2 /* DeleteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65611D181D55891F0033ADA2 /* DeleteCell.xib */; };
+		65611D1C1D55A3C80033ADA2 /* FlowCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65611D1B1D55A3C80033ADA2 /* FlowCalendarViewController.swift */; };
+		65611D1E1D55A53D0033ADA2 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65611D1D1D55A53D0033ADA2 /* ScheduleTableViewController.swift */; };
+		65611D221D55B8DA0033ADA2 /* FlowCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65611D211D55B8DA0033ADA2 /* FlowCalendarView.swift */; };
+		65785BBC1CD33054005C82EB /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65785BBB1CD33054005C82EB /* PeopleViewController.swift */; };
+		65785BC01CD3307A005C82EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65785BBF1CD3307A005C82EB /* User.swift */; };
+		657AB3141D3F28A5001F510B /* Crosslisting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657AB3131D3F28A5001F510B /* Crosslisting.swift */; };
+		657E373D1CB5A33C0092C307 /* ScheduleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657E373C1CB5A33C0092C307 /* ScheduleListViewController.swift */; };
+		659180461CB8DE5900856268 /* SubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654BE46C1CA878F6008BEFD4 /* SubjectsViewController.swift */; };
+		659948291CAAE1120024E545 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659948271CAAE1120024E545 /* DetailCell.swift */; };
+		6599482A1CAAE1120024E545 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659948281CAAE1120024E545 /* DetailCell.xib */; };
+		65A9019A1CD5BF8200327B46 /* NewScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A901991CD5BF8200327B46 /* NewScheduleViewController.swift */; };
+		65ADAEF61CD6A18400117DF7 /* TermPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ADAEF41CD6A18400117DF7 /* TermPickerViewController.swift */; };
+		65ADAEF71CD6A18400117DF7 /* TermPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65ADAEF51CD6A18400117DF7 /* TermPickerViewController.xib */; };
+		65AF2DB91CFCA8DA007D880E /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF2DB81CFCA8DA007D880E /* NotificationsViewController.swift */; };
+		65AF2DBB1CFCAB2F007D880E /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF2DBA1CFCAB2F007D880E /* Notification.swift */; };
+		65AF2DBE1CFCAC11007D880E /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF2DBC1CFCAC11007D880E /* NotificationCell.swift */; };
+		65AF2DBF1CFCAC11007D880E /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AF2DBD1CFCAC11007D880E /* NotificationCell.xib */; };
+		65AFC0A61D5045870020919F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AFC0A51D5045870020919F /* LoginViewController.swift */; };
+		65B577141CB18BEE00523948 /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B577131CB18BEE00523948 /* NewUserViewController.swift */; };
+		65B577161CB18BF700523948 /* NewUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B577151CB18BF700523948 /* NewUser.storyboard */; };
+		65BF2C181CD5DECF00992F41 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BF2C161CD5DECF00992F41 /* TextFieldCell.swift */; };
+		65BF2C191CD5DECF00992F41 /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65BF2C171CD5DECF00992F41 /* TextFieldCell.xib */; };
+		65BF2C1C1CD5E02300992F41 /* PickTermCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BF2C1A1CD5E02300992F41 /* PickTermCell.swift */; };
+		65BF2C1D1CD5E02300992F41 /* PickTermCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65BF2C1B1CD5E02300992F41 /* PickTermCell.xib */; };
+		65BF2C201CD5E06B00992F41 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BF2C1E1CD5E06B00992F41 /* SwitchCell.swift */; };
+		65BF2C211CD5E06B00992F41 /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65BF2C1F1CD5E06B00992F41 /* SwitchCell.xib */; };
+		65C199B01CD40FC6003E27EB /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C199AF1CD40FC6003E27EB /* Element.swift */; };
+		65DA478B1CACC13300B6740D /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DA478A1CACC13300B6740D /* CourseDetailsViewController.swift */; };
+		65DA478F1CACD8F700B6740D /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DA478E1CACD8F700B6740D /* Review.swift */; };
+		65DBC3981CA6BC3A0014CDAB /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DBC3971CA6BC3A0014CDAB /* SettingsTableViewController.swift */; };
+		65DEF9221CA3A7560006C382 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF9211CA3A7560006C382 /* AppDelegate.swift */; };
+		65DEF9271CA3A7560006C382 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DEF9251CA3A7560006C382 /* Main.storyboard */; };
+		65DEF9291CA3A7560006C382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DEF9281CA3A7560006C382 /* Assets.xcassets */; };
+		65DEF92C1CA3A7560006C382 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DEF92A1CA3A7560006C382 /* LaunchScreen.storyboard */; };
+		65DEF9541CA3B5B70006C382 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF9531CA3B5B70006C382 /* Course.swift */; };
+		65DEF9581CA3B8280006C382 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF9571CA3B8280006C382 /* Subject.swift */; };
+		65DEF95E1CA3BD310006C382 /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF95D1CA3BD310006C382 /* Term.swift */; };
+		65DEF9601CA3C0540006C382 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF95F1CA3C0540006C382 /* Section.swift */; };
+		65DEF9621CA46B390006C382 /* Time+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF9611CA46B390006C382 /* Time+Location.swift */; };
+		65DEF9651CA4ADA60006C382 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF9641CA4ADA60006C382 /* ScheduleViewController.swift */; };
+		65DEF96F1CA4B9B00006C382 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF96E1CA4B9B00006C382 /* Schedule.swift */; };
+		65DEF97D1CA4D4500006C382 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF97C1CA4D4500006C382 /* ColorScheme.swift */; };
+		65DEF9871CA4E48D0006C382 /* RosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF9861CA4E48D0006C382 /* RosterViewController.swift */; };
+		65DEF98C1CA4EB6D0006C382 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF98B1CA4EB6D0006C382 /* Constants.swift */; };
+		65DEF9901CA506720006C382 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF98E1CA506720006C382 /* CourseCell.swift */; };
+		65DEF9911CA506720006C382 /* CourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DEF98F1CA506720006C382 /* CourseCell.xib */; };
+		65DEF9981CA5077B0006C382 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF9961CA5077B0006C382 /* SectionCell.swift */; };
+		65DEF9991CA5077B0006C382 /* SectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DEF9971CA5077B0006C382 /* SectionCell.xib */; };
+		65DEF9B11CA51A030006C382 /* TermCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEF9AF1CA51A030006C382 /* TermCell.swift */; };
+		65DEF9B21CA51A030006C382 /* TermCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DEF9B01CA51A030006C382 /* TermCell.xib */; };
+		65EDE3491CB2FC7400F440D8 /* NewUserPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EDE3481CB2FC7400F440D8 /* NewUserPage.swift */; };
+		65F6B3491D1607860068E37D /* CourseDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6B3471D1607860068E37D /* CourseDetailCell.swift */; };
+		65F6B34A1D1607860068E37D /* CourseDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F6B3481D1607860068E37D /* CourseDetailCell.xib */; };
+		65F75B821CFE6A18000DB59F /* SubmitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F75B801CFE6A18000DB59F /* SubmitCell.swift */; };
+		65F75B831CFE6A18000DB59F /* SubmitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F75B811CFE6A18000DB59F /* SubmitCell.xib */; };
+		7F77463C1CE6D6F4006EB87E /* AddReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F77463B1CE6D6F4006EB87E /* AddReviewViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29269AD1AD38573C1A17BE86 /* Pods-RedRoster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedRoster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedRoster/Pods-RedRoster.debug.xcconfig"; sourceTree = "<group>"; };
+		413CD644D20E08864EEE6A86 /* Pods_RedRoster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedRoster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		650BDCE01CE115F100B2FD24 /* ScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleView.swift; path = List/ScheduleView.swift; sourceTree = "<group>"; };
+		650D03A41CB6284200C60E0B /* ScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		650D03A51CB6284200C60E0B /* ScheduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleCell.xib; sourceTree = "<group>"; };
+		652969D91CAA482400F5686D /* TitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
+		652969DA1CAA482400F5686D /* TitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
+		6536E1FC1D00B9FA00F470CC /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../Profile/ProfileViewController.swift; sourceTree = "<group>"; };
+		653B40111CDC702C0091C13C /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		6543CB951CFB9F5000438288 /* SliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
+		6543CB961CFB9F5000438288 /* SliderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderCell.xib; sourceTree = "<group>"; };
+		6543CB991CFB9F6600438288 /* TextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewCell.swift; sourceTree = "<group>"; };
+		6543CB9A1CFB9F6600438288 /* TextViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewCell.xib; sourceTree = "<group>"; };
+		6543CB9D1CFBAF5700438288 /* ReviewItemsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewItemsDelegate.swift; sourceTree = "<group>"; };
+		6547006A1CB0829B0076CC63 /* ReviewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
+		6547006B1CB0829B0076CC63 /* ReviewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewsViewController.xib; sourceTree = "<group>"; };
+		6547006E1CB08C500076CC63 /* RatingBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingBar.swift; sourceTree = "<group>"; };
+		654700701CB0D4AE0076CC63 /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		654700711CB0D4AE0076CC63 /* ReviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
+		654BE46C1CA878F6008BEFD4 /* SubjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectsViewController.swift; sourceTree = "<group>"; };
+		654BE46E1CA8795C008BEFD4 /* SubjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectCell.swift; sourceTree = "<group>"; };
+		654BE46F1CA8795C008BEFD4 /* SubjectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubjectCell.xib; sourceTree = "<group>"; };
+		654BE4721CA87A40008BEFD4 /* TermListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermListViewController.swift; sourceTree = "<group>"; };
+		654BE4761CA8A7A6008BEFD4 /* Classes+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Classes+Extensions.swift"; sourceTree = "<group>"; };
+		654BE4781CA900FB008BEFD4 /* SubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
+		654BE47A1CA9B204008BEFD4 /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		65537BCF1CA69C3B008B8270 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6553BC941CFB77DD0007B705 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		6553BC951CFB77DD0007B705 /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		655D022E1CA59B1A00AE769A /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		65611D151D555EC60033ADA2 /* ReviewDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewDetailViewController.swift; sourceTree = "<group>"; };
+		65611D171D55891F0033ADA2 /* DeleteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteCell.swift; sourceTree = "<group>"; };
+		65611D181D55891F0033ADA2 /* DeleteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteCell.xib; sourceTree = "<group>"; };
+		65611D1B1D55A3C80033ADA2 /* FlowCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowCalendarViewController.swift; path = List/FlowCalendarViewController.swift; sourceTree = "<group>"; };
+		65611D1D1D55A53D0033ADA2 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleTableViewController.swift; path = List/ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		65611D211D55B8DA0033ADA2 /* FlowCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCalendarView.swift; sourceTree = "<group>"; };
+		65785BBB1CD33054005C82EB /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		65785BBF1CD3307A005C82EB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		657AB3131D3F28A5001F510B /* Crosslisting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crosslisting.swift; sourceTree = "<group>"; };
+		657E373C1CB5A33C0092C307 /* ScheduleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleListViewController.swift; sourceTree = "<group>"; };
+		659948271CAAE1120024E545 /* DetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		659948281CAAE1120024E545 /* DetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		65A901991CD5BF8200327B46 /* NewScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewScheduleViewController.swift; sourceTree = "<group>"; };
+		65ADAEF41CD6A18400117DF7 /* TermPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermPickerViewController.swift; sourceTree = "<group>"; };
+		65ADAEF51CD6A18400117DF7 /* TermPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TermPickerViewController.xib; sourceTree = "<group>"; };
+		65AF2DB81CFCA8DA007D880E /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		65AF2DBA1CFCAB2F007D880E /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		65AF2DBC1CFCAC11007D880E /* NotificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		65AF2DBD1CFCAC11007D880E /* NotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
+		65AFC0A51D5045870020919F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		65B577131CB18BEE00523948 /* NewUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
+		65B577151CB18BF700523948 /* NewUser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewUser.storyboard; sourceTree = "<group>"; };
+		65BF2C161CD5DECF00992F41 /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		65BF2C171CD5DECF00992F41 /* TextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldCell.xib; sourceTree = "<group>"; };
+		65BF2C1A1CD5E02300992F41 /* PickTermCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickTermCell.swift; sourceTree = "<group>"; };
+		65BF2C1B1CD5E02300992F41 /* PickTermCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickTermCell.xib; sourceTree = "<group>"; };
+		65BF2C1E1CD5E06B00992F41 /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		65BF2C1F1CD5E06B00992F41 /* SwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
+		65C199AF1CD40FC6003E27EB /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		65DA478A1CACC13300B6740D /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
+		65DA478E1CACD8F700B6740D /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		65DBC3971CA6BC3A0014CDAB /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		65DEF91E1CA3A7550006C382 /* RedRoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedRoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DEF9211CA3A7560006C382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65DEF9261CA3A7560006C382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65DEF9281CA3A7560006C382 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65DEF92B1CA3A7560006C382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65DEF92D1CA3A7560006C382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DEF9531CA3B5B70006C382 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		65DEF9571CA3B8280006C382 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		65DEF95D1CA3BD310006C382 /* Term.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
+		65DEF95F1CA3C0540006C382 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		65DEF9611CA46B390006C382 /* Time+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Time+Location.swift"; sourceTree = "<group>"; };
+		65DEF9641CA4ADA60006C382 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleViewController.swift; path = List/ScheduleViewController.swift; sourceTree = "<group>"; };
+		65DEF96E1CA4B9B00006C382 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		65DEF97C1CA4D4500006C382 /* ColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
+		65DEF9861CA4E48D0006C382 /* RosterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterViewController.swift; sourceTree = "<group>"; };
+		65DEF98B1CA4EB6D0006C382 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		65DEF98E1CA506720006C382 /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		65DEF98F1CA506720006C382 /* CourseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseCell.xib; sourceTree = "<group>"; };
+		65DEF9961CA5077B0006C382 /* SectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
+		65DEF9971CA5077B0006C382 /* SectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionCell.xib; sourceTree = "<group>"; };
+		65DEF9AF1CA51A030006C382 /* TermCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermCell.swift; sourceTree = "<group>"; };
+		65DEF9B01CA51A030006C382 /* TermCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TermCell.xib; sourceTree = "<group>"; };
+		65EDE3481CB2FC7400F440D8 /* NewUserPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserPage.swift; sourceTree = "<group>"; };
+		65F6B3471D1607860068E37D /* CourseDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CourseDetailCell.swift; path = ../CourseDetailCell.swift; sourceTree = "<group>"; };
+		65F6B3481D1607860068E37D /* CourseDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CourseDetailCell.xib; path = ../CourseDetailCell.xib; sourceTree = "<group>"; };
+		65F75B801CFE6A18000DB59F /* SubmitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitCell.swift; sourceTree = "<group>"; };
+		65F75B811CFE6A18000DB59F /* SubmitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitCell.xib; sourceTree = "<group>"; };
+		7F77463B1CE6D6F4006EB87E /* AddReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReviewViewController.swift; sourceTree = "<group>"; };
+		ABC25B17BBE7D2E31A4F6C30 /* Pods-RedRoster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedRoster.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedRoster/Pods-RedRoster.release.xcconfig"; sourceTree = "<group>"; };
+		E227CD23F08584159F438B24 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65DEF91B1CA3A7550006C382 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2255389793A30DFFEADC70 /* Pods_RedRoster.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		037A477B0CCEB5DFC98C6BE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29269AD1AD38573C1A17BE86 /* Pods-RedRoster.debug.xcconfig */,
+				ABC25B17BBE7D2E31A4F6C30 /* Pods-RedRoster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		650D03A31CB627DA00C60E0B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				65BF2C1A1CD5E02300992F41 /* PickTermCell.swift */,
+				65BF2C1B1CD5E02300992F41 /* PickTermCell.xib */,
+				650D03A41CB6284200C60E0B /* ScheduleCell.swift */,
+				650D03A51CB6284200C60E0B /* ScheduleCell.xib */,
+				65BF2C1E1CD5E06B00992F41 /* SwitchCell.swift */,
+				65BF2C1F1CD5E06B00992F41 /* SwitchCell.xib */,
+				65BF2C161CD5DECF00992F41 /* TextFieldCell.swift */,
+				65BF2C171CD5DECF00992F41 /* TextFieldCell.xib */,
+				65611D171D55891F0033ADA2 /* DeleteCell.swift */,
+				65611D181D55891F0033ADA2 /* DeleteCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		65537BD11CA6B3D9008B8270 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				65DBC3971CA6BC3A0014CDAB /* SettingsTableViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		655D022D1CA59B0600AE769A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				65DEF9521CA3B3710006C382 /* Model */,
+				655D022E1CA59B1A00AE769A /* NetworkManager.swift */,
+				653B40111CDC702C0091C13C /* APIKeys.swift */,
+				65537BCF1CA69C3B008B8270 /* GoogleService-Info.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		65785BBA1CD32F2E005C82EB /* People */ = {
+			isa = PBXGroup;
+			children = (
+				65785BBB1CD33054005C82EB /* PeopleViewController.swift */,
+				6536E1FC1D00B9FA00F470CC /* ProfileViewController.swift */,
+				6553BC941CFB77DD0007B705 /* UserCell.swift */,
+				6553BC951CFB77DD0007B705 /* UserCell.xib */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		65AF2DB71CFCA8BA007D880E /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				65AF2DBC1CFCAC11007D880E /* NotificationCell.swift */,
+				65AF2DBD1CFCAC11007D880E /* NotificationCell.xib */,
+				65AF2DB81CFCA8DA007D880E /* NotificationsViewController.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		65DA47891CACC10300B6740D /* Course View */ = {
+			isa = PBXGroup;
+			children = (
+				654BE47A1CA9B204008BEFD4 /* CourseViewController.swift */,
+				65DA478A1CACC13300B6740D /* CourseDetailsViewController.swift */,
+				6547006A1CB0829B0076CC63 /* ReviewsViewController.swift */,
+				6547006B1CB0829B0076CC63 /* ReviewsViewController.xib */,
+				65611D151D555EC60033ADA2 /* ReviewDetailViewController.swift */,
+				6547006E1CB08C500076CC63 /* RatingBar.swift */,
+				6543CB9D1CFBAF5700438288 /* ReviewItemsDelegate.swift */,
+				7F77463B1CE6D6F4006EB87E /* AddReviewViewController.swift */,
+				65F737CC1CA9F5ED00B19128 /* Cells */,
+			);
+			path = "Course View";
+			sourceTree = "<group>";
+		};
+		65DEF9151CA3A7550006C382 = {
+			isa = PBXGroup;
+			children = (
+				65DEF9201CA3A7560006C382 /* RedRoster */,
+				AB0900BB4244BA391844CE66 /* Frameworks */,
+				037A477B0CCEB5DFC98C6BE9 /* Pods */,
+				65DEF91F1CA3A7550006C382 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65DEF91F1CA3A7550006C382 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65DEF91E1CA3A7550006C382 /* RedRoster.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65DEF9201CA3A7560006C382 /* RedRoster */ = {
+			isa = PBXGroup;
+			children = (
+				65DEF9631CA4AA600006C382 /* Application */,
+				65DEF9511CA3AAB30006C382 /* Login */,
+				65E90C611D160298004ED7C6 /* Onboarding */,
+				65DEF9831CA4E1DD0006C382 /* Roster */,
+				65DEF9681CA4B02E0006C382 /* Schedules */,
+				65785BBA1CD32F2E005C82EB /* People */,
+				65AF2DB71CFCA8BA007D880E /* Notifications */,
+				65537BD11CA6B3D9008B8270 /* Settings */,
+				65DEF97B1CA4D4260006C382 /* Contants+Functions */,
+				655D022D1CA59B0600AE769A /* Data */,
+			);
+			path = RedRoster;
+			sourceTree = "<group>";
+		};
+		65DEF9511CA3AAB30006C382 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				65AFC0A51D5045870020919F /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		65DEF9521CA3B3710006C382 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65DEF95D1CA3BD310006C382 /* Term.swift */,
+				65DEF9571CA3B8280006C382 /* Subject.swift */,
+				65DEF9531CA3B5B70006C382 /* Course.swift */,
+				657AB3131D3F28A5001F510B /* Crosslisting.swift */,
+				65DEF95F1CA3C0540006C382 /* Section.swift */,
+				65DEF96E1CA4B9B00006C382 /* Schedule.swift */,
+				65C199AF1CD40FC6003E27EB /* Element.swift */,
+				65DA478E1CACD8F700B6740D /* Review.swift */,
+				65785BBF1CD3307A005C82EB /* User.swift */,
+				65AF2DBA1CFCAB2F007D880E /* Notification.swift */,
+				65DEF9611CA46B390006C382 /* Time+Location.swift */,
+			);
+			name = Model;
+			path = ../Model;
+			sourceTree = "<group>";
+		};
+		65DEF9631CA4AA600006C382 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				65DEF9211CA3A7560006C382 /* AppDelegate.swift */,
+				65DEF9281CA3A7560006C382 /* Assets.xcassets */,
+				65DEF92D1CA3A7560006C382 /* Info.plist */,
+				65DEF92A1CA3A7560006C382 /* LaunchScreen.storyboard */,
+				65DEF9251CA3A7560006C382 /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		65DEF9681CA4B02E0006C382 /* Schedules */ = {
+			isa = PBXGroup;
+			children = (
+				657E373C1CB5A33C0092C307 /* ScheduleListViewController.swift */,
+				65A901991CD5BF8200327B46 /* NewScheduleViewController.swift */,
+				65ADAEF41CD6A18400117DF7 /* TermPickerViewController.swift */,
+				65ADAEF51CD6A18400117DF7 /* TermPickerViewController.xib */,
+				650BDCE01CE115F100B2FD24 /* ScheduleView.swift */,
+				65DEF9641CA4ADA60006C382 /* ScheduleViewController.swift */,
+				65611D1D1D55A53D0033ADA2 /* ScheduleTableViewController.swift */,
+				65611D1B1D55A3C80033ADA2 /* FlowCalendarViewController.swift */,
+				65611D211D55B8DA0033ADA2 /* FlowCalendarView.swift */,
+				650D03A31CB627DA00C60E0B /* Cells */,
+			);
+			path = Schedules;
+			sourceTree = "<group>";
+		};
+		65DEF97B1CA4D4260006C382 /* Contants+Functions */ = {
+			isa = PBXGroup;
+			children = (
+				654BE4761CA8A7A6008BEFD4 /* Classes+Extensions.swift */,
+				65DEF97C1CA4D4500006C382 /* ColorScheme.swift */,
+				65DEF98B1CA4EB6D0006C382 /* Constants.swift */,
+			);
+			path = "Contants+Functions";
+			sourceTree = "<group>";
+		};
+		65DEF9831CA4E1DD0006C382 /* Roster */ = {
+			isa = PBXGroup;
+			children = (
+				65DEF9861CA4E48D0006C382 /* RosterViewController.swift */,
+				654BE4721CA87A40008BEFD4 /* TermListViewController.swift */,
+				654BE46C1CA878F6008BEFD4 /* SubjectsViewController.swift */,
+				654BE4781CA900FB008BEFD4 /* SubjectViewController.swift */,
+				65DA47891CACC10300B6740D /* Course View */,
+				65DEF9941CA506C10006C382 /* Cells */,
+			);
+			path = Roster;
+			sourceTree = "<group>";
+		};
+		65DEF9941CA506C10006C382 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				65DEF98E1CA506720006C382 /* CourseCell.swift */,
+				65DEF98F1CA506720006C382 /* CourseCell.xib */,
+				654BE46E1CA8795C008BEFD4 /* SubjectCell.swift */,
+				654BE46F1CA8795C008BEFD4 /* SubjectCell.xib */,
+				65DEF9AF1CA51A030006C382 /* TermCell.swift */,
+				65DEF9B01CA51A030006C382 /* TermCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		65E90C611D160298004ED7C6 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				65B577151CB18BF700523948 /* NewUser.storyboard */,
+				65EDE3481CB2FC7400F440D8 /* NewUserPage.swift */,
+				65B577131CB18BEE00523948 /* NewUserViewController.swift */,
+			);
+			name = Onboarding;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		65F737CC1CA9F5ED00B19128 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				659948271CAAE1120024E545 /* DetailCell.swift */,
+				659948281CAAE1120024E545 /* DetailCell.xib */,
+				654700701CB0D4AE0076CC63 /* ReviewCell.swift */,
+				654700711CB0D4AE0076CC63 /* ReviewCell.xib */,
+				65DEF9961CA5077B0006C382 /* SectionCell.swift */,
+				65DEF9971CA5077B0006C382 /* SectionCell.xib */,
+				65F6B3471D1607860068E37D /* CourseDetailCell.swift */,
+				65F6B3481D1607860068E37D /* CourseDetailCell.xib */,
+				6543CB951CFB9F5000438288 /* SliderCell.swift */,
+				6543CB961CFB9F5000438288 /* SliderCell.xib */,
+				6543CB991CFB9F6600438288 /* TextViewCell.swift */,
+				6543CB9A1CFB9F6600438288 /* TextViewCell.xib */,
+				652969D91CAA482400F5686D /* TitleCell.swift */,
+				652969DA1CAA482400F5686D /* TitleCell.xib */,
+				65F75B801CFE6A18000DB59F /* SubmitCell.swift */,
+				65F75B811CFE6A18000DB59F /* SubmitCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AB0900BB4244BA391844CE66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E227CD23F08584159F438B24 /* Pods.framework */,
+				413CD644D20E08864EEE6A86 /* Pods_RedRoster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65DEF91D1CA3A7550006C382 /* RedRoster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65DEF9461CA3A7560006C382 /* Build configuration list for PBXNativeTarget "RedRoster" */;
+			buildPhases = (
+				7484D568C8B8679DDE3EDBB5 /* [CP] Check Pods Manifest.lock */,
+				65DEF91A1CA3A7550006C382 /* Sources */,
+				65DEF91B1CA3A7550006C382 /* Frameworks */,
+				65DEF91C1CA3A7550006C382 /* Resources */,
+				3511890C2A8537A87E6D447E /* [CP] Embed Pods Frameworks */,
+				19C97273F04CF0F684E0D51D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedRoster;
+			productName = RedRoster;
+			productReference = 65DEF91E1CA3A7550006C382 /* RedRoster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65DEF9161CA3A7550006C382 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = dantheli;
+				TargetAttributes = {
+					65DEF91D1CA3A7550006C382 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = RNCTC44528;
+						LastSwiftMigration = 0820;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 65DEF9191CA3A7550006C382 /* Build configuration list for PBXProject "RedRoster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65DEF9151CA3A7550006C382;
+			productRefGroup = 65DEF91F1CA3A7550006C382 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65DEF91D1CA3A7550006C382 /* RedRoster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65DEF91C1CA3A7550006C382 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6543CB981CFB9F5000438288 /* SliderCell.xib in Resources */,
+				65537BD01CA69C3B008B8270 /* GoogleService-Info.plist in Resources */,
+				65DEF9911CA506720006C382 /* CourseCell.xib in Resources */,
+				650D03A71CB6284200C60E0B /* ScheduleCell.xib in Resources */,
+				65DEF9991CA5077B0006C382 /* SectionCell.xib in Resources */,
+				6543CB9C1CFB9F6600438288 /* TextViewCell.xib in Resources */,
+				65F6B34A1D1607860068E37D /* CourseDetailCell.xib in Resources */,
+				65611D1A1D55891F0033ADA2 /* DeleteCell.xib in Resources */,
+				6547006D1CB0829B0076CC63 /* ReviewsViewController.xib in Resources */,
+				65ADAEF71CD6A18400117DF7 /* TermPickerViewController.xib in Resources */,
+				65DEF92C1CA3A7560006C382 /* LaunchScreen.storyboard in Resources */,
+				6599482A1CAAE1120024E545 /* DetailCell.xib in Resources */,
+				65DEF9B21CA51A030006C382 /* TermCell.xib in Resources */,
+				654700731CB0D4AE0076CC63 /* ReviewCell.xib in Resources */,
+				65BF2C211CD5E06B00992F41 /* SwitchCell.xib in Resources */,
+				652969DC1CAA482400F5686D /* TitleCell.xib in Resources */,
+				65B577161CB18BF700523948 /* NewUser.storyboard in Resources */,
+				65BF2C191CD5DECF00992F41 /* TextFieldCell.xib in Resources */,
+				65BF2C1D1CD5E02300992F41 /* PickTermCell.xib in Resources */,
+				65DEF9291CA3A7560006C382 /* Assets.xcassets in Resources */,
+				65AF2DBF1CFCAC11007D880E /* NotificationCell.xib in Resources */,
+				654BE4711CA8795C008BEFD4 /* SubjectCell.xib in Resources */,
+				65DEF9271CA3A7560006C382 /* Main.storyboard in Resources */,
+				6553BC971CFB77DD0007B705 /* UserCell.xib in Resources */,
+				65F75B831CFE6A18000DB59F /* SubmitCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19C97273F04CF0F684E0D51D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedRoster/Pods-RedRoster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3511890C2A8537A87E6D447E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedRoster/Pods-RedRoster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7484D568C8B8679DDE3EDBB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65DEF91A1CA3A7550006C382 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65611D1E1D55A53D0033ADA2 /* ScheduleTableViewController.swift in Sources */,
+				654BE4701CA8795C008BEFD4 /* SubjectCell.swift in Sources */,
+				659180461CB8DE5900856268 /* SubjectsViewController.swift in Sources */,
+				6547006F1CB08C500076CC63 /* RatingBar.swift in Sources */,
+				652969DB1CAA482400F5686D /* TitleCell.swift in Sources */,
+				654BE4731CA87A40008BEFD4 /* TermListViewController.swift in Sources */,
+				657AB3141D3F28A5001F510B /* Crosslisting.swift in Sources */,
+				655D022F1CA59B1A00AE769A /* NetworkManager.swift in Sources */,
+				65DEF98C1CA4EB6D0006C382 /* Constants.swift in Sources */,
+				65A9019A1CD5BF8200327B46 /* NewScheduleViewController.swift in Sources */,
+				6543CB971CFB9F5000438288 /* SliderCell.swift in Sources */,
+				650D03A61CB6284200C60E0B /* ScheduleCell.swift in Sources */,
+				65EDE3491CB2FC7400F440D8 /* NewUserPage.swift in Sources */,
+				65DEF95E1CA3BD310006C382 /* Term.swift in Sources */,
+				65BF2C201CD5E06B00992F41 /* SwitchCell.swift in Sources */,
+				65DEF9901CA506720006C382 /* CourseCell.swift in Sources */,
+				65BF2C181CD5DECF00992F41 /* TextFieldCell.swift in Sources */,
+				65DEF9541CA3B5B70006C382 /* Course.swift in Sources */,
+				65B577141CB18BEE00523948 /* NewUserViewController.swift in Sources */,
+				65DEF9601CA3C0540006C382 /* Section.swift in Sources */,
+				65785BBC1CD33054005C82EB /* PeopleViewController.swift in Sources */,
+				654700721CB0D4AE0076CC63 /* ReviewCell.swift in Sources */,
+				7F77463C1CE6D6F4006EB87E /* AddReviewViewController.swift in Sources */,
+				65DA478F1CACD8F700B6740D /* Review.swift in Sources */,
+				65DEF9B11CA51A030006C382 /* TermCell.swift in Sources */,
+				65611D221D55B8DA0033ADA2 /* FlowCalendarView.swift in Sources */,
+				65DEF9581CA3B8280006C382 /* Subject.swift in Sources */,
+				65DEF9651CA4ADA60006C382 /* ScheduleViewController.swift in Sources */,
+				654BE4771CA8A7A6008BEFD4 /* Classes+Extensions.swift in Sources */,
+				65785BC01CD3307A005C82EB /* User.swift in Sources */,
+				65BF2C1C1CD5E02300992F41 /* PickTermCell.swift in Sources */,
+				65DEF9221CA3A7560006C382 /* AppDelegate.swift in Sources */,
+				65DEF9621CA46B390006C382 /* Time+Location.swift in Sources */,
+				65DEF9981CA5077B0006C382 /* SectionCell.swift in Sources */,
+				65611D191D55891F0033ADA2 /* DeleteCell.swift in Sources */,
+				65AFC0A61D5045870020919F /* LoginViewController.swift in Sources */,
+				65611D161D555EC60033ADA2 /* ReviewDetailViewController.swift in Sources */,
+				65C199B01CD40FC6003E27EB /* Element.swift in Sources */,
+				65DEF9871CA4E48D0006C382 /* RosterViewController.swift in Sources */,
+				657E373D1CB5A33C0092C307 /* ScheduleListViewController.swift in Sources */,
+				65F75B821CFE6A18000DB59F /* SubmitCell.swift in Sources */,
+				65DEF96F1CA4B9B00006C382 /* Schedule.swift in Sources */,
+				654BE47B1CA9B204008BEFD4 /* CourseViewController.swift in Sources */,
+				6536E1FD1D00B9FA00F470CC /* ProfileViewController.swift in Sources */,
+				6553BC961CFB77DD0007B705 /* UserCell.swift in Sources */,
+				650BDCE11CE115F100B2FD24 /* ScheduleView.swift in Sources */,
+				6543CB9E1CFBAF5700438288 /* ReviewItemsDelegate.swift in Sources */,
+				654BE4791CA900FB008BEFD4 /* SubjectViewController.swift in Sources */,
+				6543CB9B1CFB9F6600438288 /* TextViewCell.swift in Sources */,
+				65AF2DB91CFCA8DA007D880E /* NotificationsViewController.swift in Sources */,
+				65F6B3491D1607860068E37D /* CourseDetailCell.swift in Sources */,
+				65DBC3981CA6BC3A0014CDAB /* SettingsTableViewController.swift in Sources */,
+				65AF2DBE1CFCAC11007D880E /* NotificationCell.swift in Sources */,
+				65611D1C1D55A3C80033ADA2 /* FlowCalendarViewController.swift in Sources */,
+				65AF2DBB1CFCAB2F007D880E /* Notification.swift in Sources */,
+				653B40121CDC702C0091C13C /* APIKeys.swift in Sources */,
+				65DA478B1CACC13300B6740D /* CourseDetailsViewController.swift in Sources */,
+				659948291CAAE1120024E545 /* DetailCell.swift in Sources */,
+				6547006C1CB0829B0076CC63 /* ReviewsViewController.swift in Sources */,
+				65ADAEF61CD6A18400117DF7 /* TermPickerViewController.swift in Sources */,
+				65DEF97D1CA4D4500006C382 /* ColorScheme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		65DEF9251CA3A7560006C382 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65DEF9261CA3A7560006C382 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		65DEF92A1CA3A7560006C382 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65DEF92B1CA3A7560006C382 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65DEF9441CA3A7560006C382 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daniel Li (JJYXGC8HRH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daniel Li (JJYXGC8HRH)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65DEF9451CA3A7560006C382 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Daniel Li (RNCTC44528)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Daniel Li (RNCTC44528)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65DEF9471CA3A7560006C382 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29269AD1AD38573C1A17BE86 /* Pods-RedRoster.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = RedRoster/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -Xfrontend -debug-time-function-bodies";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.redroster.redroster-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		65DEF9481CA3A7560006C382 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABC25B17BBE7D2E31A4F6C30 /* Pods-RedRoster.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = RedRoster/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -Xfrontend -debug-time-function-bodies";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.redroster.redroster-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65DEF9191CA3A7550006C382 /* Build configuration list for PBXProject "RedRoster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DEF9441CA3A7560006C382 /* Debug */,
+				65DEF9451CA3A7560006C382 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65DEF9461CA3A7560006C382 /* Build configuration list for PBXNativeTarget "RedRoster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DEF9471CA3A7560006C382 /* Debug */,
+				65DEF9481CA3A7560006C382 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65DEF9161CA3A7550006C382 /* Project object */;
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--New User View Controller-->
+        <scene sceneID="8zK-Qj-MNv">
+            <objects>
+                <pageViewController storyboardIdentifier="NewUserViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="KiO-cN-vs7" customClass="NewUserViewController" customModule="RedRoster" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yn7-FQ-jZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="77"/>
+        </scene>
+        <!--New User Page-->
+        <scene sceneID="GsJ-Pl-Yj1">
+            <objects>
+                <viewController storyboardIdentifier="NewUserPage" id="CNZ-vf-qJ6" customClass="NewUserPage" customModule="RedRoster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tqS-ui-zFI"/>
+                        <viewControllerLayoutGuide type="bottom" id="zcM-Le-FFl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IIo-0i-ldv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View the Course Roster and consider what to take" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qF-QH-G9y">
+                                <rect key="frame" x="36" y="78" width="248" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="O13-ak-oCQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See reviews for courses and write your own" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuU-yF-hfe">
+                                <rect key="frame" x="36" y="446" width="248" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="scf-Kq-dHY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OvH-Ji-z4j">
+                                <rect key="frame" x="36" y="154" width="248" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="Edq-hJ-4fl"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhr-Gh-Br5">
+                                <rect key="frame" x="85" y="530" width="150" height="30"/>
+                                <state key="normal" title="Start using RedRoster">
+                                    <color key="titleColor" white="1" alpha="0.74520722517730498" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="proceedButton:" destination="CNZ-vf-qJ6" eventType="touchUpInside" id="n6u-KP-3so"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6qF-QH-G9y" firstAttribute="centerX" secondItem="IIo-0i-ldv" secondAttribute="centerX" id="EZ0-uO-JLL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OvH-Ji-z4j" secondAttribute="trailing" constant="20" id="GLg-ur-wvd"/>
+                            <constraint firstItem="Jhr-Gh-Br5" firstAttribute="centerX" secondItem="IIo-0i-ldv" secondAttribute="centerX" id="HXZ-YE-hzw"/>
+                            <constraint firstItem="OvH-Ji-z4j" firstAttribute="leading" secondItem="6qF-QH-G9y" secondAttribute="leading" id="PoX-5D-Rb9"/>
+                            <constraint firstItem="OvH-Ji-z4j" firstAttribute="top" secondItem="6qF-QH-G9y" secondAttribute="bottom" constant="32" id="WHK-K7-5Qv"/>
+                            <constraint firstItem="XuU-yF-hfe" firstAttribute="leading" secondItem="OvH-Ji-z4j" secondAttribute="leading" id="WLo-Xw-hvn"/>
+                            <constraint firstItem="OvH-Ji-z4j" firstAttribute="trailing" secondItem="6qF-QH-G9y" secondAttribute="trailing" id="YVd-y8-8ZL"/>
+                            <constraint firstItem="OvH-Ji-z4j" firstAttribute="leading" secondItem="IIo-0i-ldv" secondAttribute="leadingMargin" constant="20" id="Yf0-DG-A8a"/>
+                            <constraint firstItem="XuU-yF-hfe" firstAttribute="trailing" secondItem="OvH-Ji-z4j" secondAttribute="trailing" id="ftr-hS-PS4"/>
+                            <constraint firstItem="OvH-Ji-z4j" firstAttribute="centerY" secondItem="IIo-0i-ldv" secondAttribute="centerY" id="ieL-9Q-dx9"/>
+                            <constraint firstItem="zcM-Le-FFl" firstAttribute="top" secondItem="Jhr-Gh-Br5" secondAttribute="bottom" constant="8" id="vX1-RD-WtA"/>
+                            <constraint firstItem="XuU-yF-hfe" firstAttribute="top" secondItem="OvH-Ji-z4j" secondAttribute="bottom" constant="32" id="xKE-qm-mTQ"/>
+                            <constraint firstItem="XuU-yF-hfe" firstAttribute="centerX" secondItem="IIo-0i-ldv" secondAttribute="centerX" id="xgn-wB-lcC"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bottomLabel" destination="XuU-yF-hfe" id="LCw-fp-57j"/>
+                        <outlet property="imageView" destination="OvH-Ji-z4j" id="A68-wI-qC0"/>
+                        <outlet property="proceedButton" destination="Jhr-Gh-Br5" id="ebD-EL-g83"/>
+                        <outlet property="topLabel" destination="6qF-QH-G9y" id="VSV-YQ-N7K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="red-Bd-jOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="591" y="77"/>
+        </scene>
+    </scenes>
+</document>

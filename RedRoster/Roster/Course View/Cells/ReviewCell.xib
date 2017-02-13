@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="74" id="KGk-i7-Jjw" customClass="ReviewCell" customModule="RedRoster" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="291" height="73.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daniel Li" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQZ-1S-V4r">
+                        <rect key="frame" x="16" y="49" width="51" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fall 2014" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpU-MU-4w9">
+                        <rect key="frame" x="230" y="49" width="53" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="1Mp-io-5JW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VX0-5p-YQz">
+                        <rect key="frame" x="16" y="8" width="267" height="33"/>
+                        <string key="text">I really enjoyed this class because it taught me a lot about real-world applications of engineering and how it benefits the world.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qpU-MU-4w9" firstAttribute="top" secondItem="VX0-5p-YQz" secondAttribute="bottom" constant="8" id="1QT-Lw-ImB"/>
+                    <constraint firstItem="YQZ-1S-V4r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="7QX-vg-0f5"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qpU-MU-4w9" secondAttribute="bottom" id="Pv9-Sq-2G3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qpU-MU-4w9" secondAttribute="trailing" id="VDe-R2-Knv"/>
+                    <constraint firstItem="VX0-5p-YQz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="c6Q-7r-coe"/>
+                    <constraint firstItem="VX0-5p-YQz" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="dzU-p9-N16"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="YQZ-1S-V4r" secondAttribute="bottom" id="eGd-G5-BbO"/>
+                    <constraint firstItem="VX0-5p-YQz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="n6u-mr-jm8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="VX0-5p-YQz" id="paA-R0-d0q"/>
+                <outlet property="nameLabel" destination="YQZ-1S-V4r" id="YS1-Nb-dhV"/>
+                <outlet property="termLabel" destination="qpU-MU-4w9" id="r3U-MR-HTH"/>
+            </connections>
+            <point key="canvasLocation" x="410" y="307"/>
+        </tableViewCell>
+    </objects>
+</document>

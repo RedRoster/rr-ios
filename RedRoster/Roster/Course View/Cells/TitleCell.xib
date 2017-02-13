@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="KGk-i7-Jjw" customClass="TitleCell" customModule="RedRoster" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="159.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSQ-Tr-H7R">
+                        <rect key="frame" x="0.0" y="80" width="320" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graded or Satisfactory/Unsatisfactory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KQt-NL-Dd7" userLabel="Grading Label">
+                                <rect key="frame" x="16" y="4" width="288" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="ZYS-Yn-Eb8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1-4 credits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVs-LL-crQ">
+                                <rect key="frame" x="125" y="28" width="70" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wVs-LL-crQ" firstAttribute="centerX" secondItem="hSQ-Tr-H7R" secondAttribute="centerX" id="ZRC-he-hNN"/>
+                            <constraint firstItem="KQt-NL-Dd7" firstAttribute="leading" secondItem="hSQ-Tr-H7R" secondAttribute="leadingMargin" constant="8" id="b5i-nb-8rI"/>
+                            <constraint firstItem="KQt-NL-Dd7" firstAttribute="top" secondItem="hSQ-Tr-H7R" secondAttribute="top" constant="4" id="c7a-5l-nMi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KQt-NL-Dd7" secondAttribute="trailing" constant="8" id="jMZ-GI-NH6"/>
+                            <constraint firstItem="wVs-LL-crQ" firstAttribute="top" secondItem="KQt-NL-Dd7" secondAttribute="bottom" constant="8" id="t1D-JY-1pC"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UtR-Gn-hD4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Chemistry in Engineering" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np1-cO-dYM">
+                                <rect key="frame" x="16" y="29" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Np1-cO-dYM" secondAttribute="trailing" constant="8" id="FHN-E7-Hj3"/>
+                            <constraint firstItem="Np1-cO-dYM" firstAttribute="centerY" secondItem="UtR-Gn-hD4" secondAttribute="centerY" id="ftn-CC-hph"/>
+                            <constraint firstItem="Np1-cO-dYM" firstAttribute="leading" secondItem="UtR-Gn-hD4" secondAttribute="leadingMargin" constant="8" id="xce-Ac-OJp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="hSQ-Tr-H7R" secondAttribute="bottom" id="8Fe-jB-sMo"/>
+                    <constraint firstAttribute="trailing" secondItem="hSQ-Tr-H7R" secondAttribute="trailing" id="GfB-ls-GAi"/>
+                    <constraint firstItem="hSQ-Tr-H7R" firstAttribute="top" secondItem="UtR-Gn-hD4" secondAttribute="bottom" id="GfC-aV-RZK"/>
+                    <constraint firstItem="hSQ-Tr-H7R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="H7a-c3-vFR"/>
+                    <constraint firstItem="UtR-Gn-hD4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LL3-Ci-zxP"/>
+                    <constraint firstAttribute="trailing" secondItem="UtR-Gn-hD4" secondAttribute="trailing" id="LLD-6O-Xnl"/>
+                    <constraint firstItem="hSQ-Tr-H7R" firstAttribute="height" secondItem="UtR-Gn-hD4" secondAttribute="height" id="MFR-u1-Tg5"/>
+                    <constraint firstItem="UtR-Gn-hD4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sla-4j-OyY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="creditsLabel" destination="wVs-LL-crQ" id="cMU-aN-4md"/>
+                <outlet property="gradeLabel" destination="KQt-NL-Dd7" id="rLh-X8-hbx"/>
+                <outlet property="titleLabel" destination="Np1-cO-dYM" id="yHI-qR-9if"/>
+            </connections>
+            <point key="canvasLocation" x="192" y="315"/>
+        </tableViewCell>
+    </objects>
+</document>
