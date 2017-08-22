@@ -2,7 +2,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'RedRoster' do
-  pod 'Google/SignIn'
+  pod 'GoogleSignIn'
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'RealmSwift'

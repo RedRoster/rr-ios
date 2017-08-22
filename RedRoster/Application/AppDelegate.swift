@@ -140,13 +140,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UITabB
         let peopleViewController = UINavigationController(rootViewController: PeopleViewController(searchBase: .serverSide))
         peopleViewController.tabBarItem = UITabBarItem(title: "People", image: UIImage(named: "people"), tag: 2)
         
-        let profileViewController = ProfileViewController()
-        profileViewController.user = User.currentUser
-        profileViewController.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "gear"), style: .plain, target: profileViewController, action: #selector(ProfileViewController.settingsButtonPressed))
-        let profileNavigationController = UINavigationController(rootViewController: profileViewController)
-        profileNavigationController.tabBarItem = UITabBarItem(title: "Me", image: UIImage(named: "person"), tag: 3)
+        let settingsViewController = SettingsTableViewController()
+        let settingsNavigationController = UINavigationController(rootViewController: settingsViewController)
+        settingsNavigationController.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(named: "gear"), tag: 3)
         
-        tabBarController.setViewControllers([rosterViewController, scheduleViewController, peopleViewController, profileNavigationController], animated: false)
+        tabBarController.setViewControllers([rosterViewController, scheduleViewController, peopleViewController, settingsNavigationController], animated: false)
     }
     
     // MARK: - Appearance

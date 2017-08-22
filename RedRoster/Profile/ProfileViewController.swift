@@ -243,17 +243,4 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
         header.textLabel?.textColor = UIColor.rosterHeaderTitleColor()
         header.backgroundView?.backgroundColor = UIColor.clear
     }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let offsetY = scrollView.contentOffset.y + tableView.contentInset.top
-        
-        switch offsetY {
-        case -CGFloat.greatestFiniteMagnitude..<0.0:
-            profileContainer.alpha = 1.0
-        case 0.0...176.0:
-            profileContainer.alpha = -offsetY / 176.0 + 1.0
-        default:
-            profileContainer.alpha = 0.0
-        }
-    }
 }
