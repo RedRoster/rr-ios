@@ -1,0 +1,12 @@
+RedRoster is a social course roster for Cornell University.
+
+Do you have a Cornell University email? Students who sign in with their email can see the schedules and reviews created by other students.
+
+• Create public and private schedules
+• View your friends' schedules
+• View schedules in both list and calendar format
+• Read course reviews by other students and write your own
+• See who else is taking a course with you
+• View courses offline that you've already looked at
+
+This app is not sponsored by Cornell University. Please use the official Cornell course roster for academic planning.

@@ -1,0 +1,6 @@
+We're releasing something big soon!
+
+This is a brief update. In short:
+
+- I added crash analytics so if your app crashed I can see how to fix it. So please try crashing your app.
+- Removed your profile tab, because what was the point of that?

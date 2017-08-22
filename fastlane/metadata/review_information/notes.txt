@@ -1,0 +1,1 @@
+Use the username and password provided for Google Sign-In. The application is available to all users to look at Cornell's subjects and courses. However, users must sign in to view reviews and see other users. Users can create both public and private schedules.
