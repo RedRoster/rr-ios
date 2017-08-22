@@ -10,7 +10,6 @@ import UIKit
 import GoogleSignIn
 import SafariServices
 import MessageUI
-import Crashlytics
 
 class SettingsTableViewController: UITableViewController {
     
@@ -24,7 +23,6 @@ class SettingsTableViewController: UITableViewController {
         signOutLabel.textColor = UIColor.red
         tableView.separatorColor = UIColor.rosterCellSeparatorColor()
         tableView.backgroundColor = UIColor.rosterBackgroundColor()
-        Crashlytics.sharedInstance().crash()
     }
 
     // MARK: TableView
