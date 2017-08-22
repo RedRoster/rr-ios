@@ -468,6 +468,7 @@
 				65DEF91C1CA3A7550006C382 /* Resources */,
 				3511890C2A8537A87E6D447E /* [CP] Embed Pods Frameworks */,
 				19C97273F04CF0F684E0D51D /* [CP] Copy Pods Resources */,
+				656492061F4CB202002714D2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -614,6 +615,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedRoster/Pods-RedRoster-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		656492061F4CB202002714D2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" dd9285bda31e8957d5a93bfd5014cc9ef0768486 146f8f1ed45c7579d8695d68f4514a6ef7f88b1bb74d148004250382ff30ed21";
 		};
 		7484D568C8B8679DDE3EDBB5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -829,6 +843,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = RedRoster/Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

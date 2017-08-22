@@ -11,5 +11,7 @@ target 'RedRoster' do
   pod 'PickerView'
   pod 'KMPlaceholderTextView'
   pod 'HanekeSwift', :git => 'https://github.com/Haneke/HanekeSwift.git', :branch => 'feature/swift-3'
+  pod 'Fabric'
+  pod 'Crashlytics'
 end
 

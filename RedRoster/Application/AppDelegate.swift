@@ -7,9 +7,10 @@
 //
 
 import UIKit
-import Google
 import GoogleSignIn
 import RealmSwift
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UITabBarControllerDelegate {
@@ -29,9 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UITabB
         storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
         // Configure sign-in
-        var configureError: NSError?
-        GGLContext.sharedInstance().configureWithError(&configureError)
-        assert(configureError == nil, "Error configuring Google services: \(configureError)")
+        GIDSignIn.sharedInstance().clientID = "519838439998-5bkv3suacje3s5okc6feoeqpjhnd1iom.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().hostedDomain = "cornell.edu"
         
@@ -46,6 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UITabB
         
         window?.makeKeyAndVisible()
         window?.tintColor = UIColor.rosterRed()
+        Fabric.with([Crashlytics.self])
         return true
     }
     
@@ -140,7 +140,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UITabB
         let peopleViewController = UINavigationController(rootViewController: PeopleViewController(searchBase: .serverSide))
         peopleViewController.tabBarItem = UITabBarItem(title: "People", image: UIImage(named: "people"), tag: 2)
         
-        let settingsViewController = SettingsTableViewController()
+        let settingsViewController = storyboard!.instantiateViewController(withIdentifier: "SettingsTableViewController")
         let settingsNavigationController = UINavigationController(rootViewController: settingsViewController)
         settingsNavigationController.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(named: "gear"), tag: 3)
         
